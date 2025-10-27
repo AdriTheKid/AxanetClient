@@ -1,4 +1,4 @@
-# Axanet – Gestor de Clientes (Python + GitHub Actions)
+# Axanet – Gestor de Clientes (Python + GitHub Actions) por LAFY AL07113680
 
 Aplicación de línea de comandos para gestionar archivos de clientes, con integración opcional a **GitHub Actions** mediante `repository_dispatch`.
 

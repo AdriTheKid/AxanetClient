@@ -57,12 +57,6 @@ def _save_client(hash_id: str, data: dict) -> None:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 def _notify_github(event_type: str, client_name: str, payload: dict | None = None) -> None:
-    """
-    Envía un repository_dispatch para activar GitHub Actions (opcional).
-    Requiere:
-      - GITHUB_TOKEN: un token (PAT) con permisos "repo" o el GITHUB_TOKEN de Actions
-      - GITHUB_REPOSITORY: owner/repo
-    """
     token = os.getenv("GITHUB_TOKEN")
     repo = os.getenv("GITHUB_REPOSITORY")
     if not token or not repo:
